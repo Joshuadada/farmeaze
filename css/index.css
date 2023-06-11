@@ -1,0 +1,901 @@
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --main-color: #085e2c;
+    --black: #000000;
+    --white: #ffffff;
+    --button-ground: #64ec9e;
+    --third-color: #e0f1e7;
+    --headline-font: "Lexend", sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: #F5FAF6;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.harmburger {
+    display: none;
+    position: absolute;
+}
+
+.logo {
+    background: linear-gradient(180deg, #F8E8C9 0%, rgba(253, 248, 238, 0.9) 93.22%, rgba(253, 248, 238, 0.3) 96.25%);
+    width: 332px;
+    height: 320px;
+    border-radius: 0 0 100% 0;
+}
+
+.header h1 {
+    margin: 2rem;
+    margin-left: 50px;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header span {
+    color: #269B51;
+}
+
+.header .menu {
+    margin: 2rem;
+}
+
+.header .shop {
+    margin: 2rem;
+    background: #ffffff;
+    width: 89px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+    border: solid 2px #000000;
+    border-radius: 5px;
+}
+
+.header .shop:hover {
+    background: #F5FAF6;
+
+}
+
+.header .shop a {
+    text-decoration: none;
+    gap: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+}
+
+.header .shop a:hover {
+    color: #269B51;
+}
+
+.header .menu a {
+    text-decoration: none;
+    gap: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: fantasy;
+    margin-left: 29px;
+    color: #000000;
+}
+
+.header .menu a:hover {
+    color: #269B51;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .cat {
+    margin-left: 50px;
+    margin-top: 7rem;
+}
+
+.hero .eaze,
+.our-story {
+    display: grid;
+}
+
+.hero .cat h1 {
+    width: 520px;
+    font-size: 54px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 54px;
+    z-index: 9999;
+    margin-bottom: 45px;
+}
+
+.circle {
+    width: 266px;
+    height: 260px;
+    background: rgba(226, 250, 231, 0.75);
+    border-radius: 100%;
+    transform: translateY(-13rem) translateX(24rem);
+    z-index: -1;
+    position: absolute;
+    display: grid;
+}
+
+.circle img {
+    margin: 5rem;
+    margin-left: 10rem;
+}
+
+
+.hero .cat a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #269B51;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 89px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+    border: solid 2px #269B51;
+    border-radius: 5px;
+}
+
+.hero .cat a:hover {
+    background: rgba(226, 250, 231, 0.75);
+    color: #269B51;
+    transition: 0.5s;
+}
+
+.access {
+    display: flex;
+    margin-top: 90px;
+}
+
+.farmer,
+.millions {
+    display: flex;
+}
+
+.access .farmer .two {
+    transform: translateX(3rem);
+    position: absolute;
+}
+
+.access .farmer .three {
+    transform: translateX(5.5rem);
+    position: absolute;
+}
+
+.millions {
+    margin-left: 7rem;
+}
+
+.millions p {
+    margin-left: 10px;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1.3rem;
+    font-size: 20px;
+}
+
+.second-section {
+    background: #ffffff;
+    margin-top: 2rem;
+}
+
+
+
+.story {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 113px;
+    gap: -5rem;
+}
+
+.story .left {
+    transform: translateX(0rem);
+}
+
+
+.story h3 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    margin-top: 8rem;
+}
+
+.story p {
+    width: 600px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.story a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #269B51;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 89px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+    border: solid 2px #269B51;
+    border-radius: 5px;
+}
+
+.story a:hover {
+    background: rgba(226, 250, 231, 0.75);
+    color: #269B51;
+    transition: 0.5s;
+}
+
+.story .star {
+    margin-left: 374px;
+    margin-bottom: 136.71px;
+}
+
+.story .man {
+    margin-bottom: 17px;
+}
+
+.grid-product {
+    display: grid;
+}
+
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.products h3 {
+    margin-top: 85px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.products p {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 72px;
+    margin-left: 219px;
+    margin-right: 219px;
+    margin-bottom: 75px;
+}
+
+.product {
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 1rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 75px;
+}
+
+.product h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+}
+
+.product p {
+    width: 210px;
+    margin-top: 10px;
+}
+
+.product img {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 33px;
+}
+
+.arrow a {
+    text-decoration: none;
+    color: #269B51;
+    font-size: 16px;
+    font-family:
+        'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.arrow img {
+    cursor: pointer;
+}
+
+.fourth-part {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register {
+    margin-left: 50px;
+}
+
+.register img {
+    margin-left: 34rem;
+
+}
+
+.register h1 {
+    width: 558px;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 135.21px;
+    margin-bottom: 21px;
+}
+
+.register h1 span {
+    color: #269B51;
+}
+
+.register ul {
+    display: flex;
+    gap: 10px;
+}
+
+.register ul li {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+.register ul li div {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.register ul li .ball-one {
+    background: rgba(148, 11, 11, 0.25);
+    ;
+}
+
+.register ul li .ball-two {
+    background: rgba(148, 134, 11, 0.24);
+}
+
+.register ul li .ball-three {
+    background: rgba(11, 148, 58, 0.25);
+}
+
+.register .link {
+    display: flex;
+    background: #326543;
+    width: 450px;
+    padding: 20px 40px;
+    border: 2px solid #326543;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.link-arrow {
+    transform: translate(-15rem) translateY(-5rem);
+}
+
+.link-arrow img {
+    border: 2px solid rgb(38, 155, 81);
+    background: rgb(38, 155, 81);
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.register h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.register p {
+    width: 109px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.farm {
+    margin-top: 37px;
+    margin-right: 50px;
+    margin-bottom: 68.58px;
+}
+
+.footer-farm {
+    position: absolute;
+    z-index: -1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-top: 127px;
+}
+
+.email {
+    display: flex;
+}
+
+.newsletter {
+    color: #ffffff;
+}
+
+.newsletter h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.social {
+    display: flex;
+    margin-top: 30px;
+    gap: 1rem;
+}
+
+.social img {
+    background: #000000;
+    border-radius: 10px;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.email input {
+    width: 344.52px;
+    height: 39px;
+    border: 2pxx solid #ffffff;
+    border-radius: 30px;
+}
+
+.email input::placeholder {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.newsletter a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.search {
+    width: 108.72px;
+    border-radius: 2px solid #5DC081;
+    ;
+    background: #5DC081;
+    ;
+    border-radius: 30px;
+    transform: translateX(-6rem);
+}
+
+
+
+@media (max-width:1000px) {
+    .hero .cat h1 {
+        width: 450px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .millions img {
+        width: 100%;
+    }
+
+    .millions p {
+        width: 200px;
+    }
+
+    .left {
+        margin-left: 2rem;
+    }
+
+    .left p {
+        width: 370px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 40rem;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+    .register {
+        margin-top: -28rem;
+    }
+
+    .register h1 {
+        width: 410px;
+    }
+
+    .register .link {
+        width: 310px;
+    }
+
+    .link-arrow {
+        transform: none;
+    }
+
+    .footer-content {
+        margin-top: 3rem;
+    }
+
+
+    @media (max-width:870px) {
+
+        body {
+            background: #ffffff;
+        }
+
+        .harmburger {
+            display: flex;
+            margin: 2rem;
+            cursor: pointer;
+        }
+
+        .align-burger {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .logo h1 {
+            display: none;
+        }
+
+        .header .menu,
+        .header .shop {
+            display: none;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            margin-top: -15rem;
+        }
+
+        .eaze,
+        .our-story {
+            display: grid;
+        }
+
+
+
+        .hero .cat a {
+            border-radius: 31px;
+            width: 101px;
+            height: 40px;
+        }
+
+        .circle {
+            width: 113px;
+            height: 109px;
+            margin-top: 13rem;
+            margin-left: -5rem;
+        }
+
+        .circle img,
+        .star img {
+            width: 40px;
+            margin: 2.1rem;
+        }
+
+        .farmer {
+            margin-top: 42rem;
+            position: absolute;
+        }
+
+        .access {
+            display: flex;
+            margin: 0;
+        }
+
+        .millions p {
+            width: 100%;
+            font-size: 12px;
+        }
+
+
+        .woman,
+        .man,
+        .farm img {
+            margin-top: 124px;
+            width: 375px;
+        }
+
+        .center-woman,
+        .center-man,
+        .center-farm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .story {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: -2rem;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 0;
+        }
+
+        .left p {
+            width: 375px;
+        }
+
+        .star {
+            background: rgba(226, 250, 231, 0.75);
+            border-radius: 100%;
+            z-index: -1;
+            width: 113px;
+            height: 109px;
+            margin-left: -5rem;
+        }
+
+        .our-story a {
+            width: 110px;
+            height: 40px;
+            border-radius: 31px;
+        }
+
+        .grid-man {
+            display: grid;
+            margin-top: -12rem;
+        }
+
+        .products h3 {
+            font-size: 32px;
+        }
+
+        .featured p {
+            width: 320px;
+            font-size: 16px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .card img {
+            width: 80px;
+        }
+
+        .center-p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .center-p p {
+            width: 210px;
+            font-size: 16px;
+        }
+
+        .third-part {
+            background: rgba(226, 250, 231, 0.75);
+        }
+
+        .arrow {
+            margin-top: -5rem;
+        }
+
+        .fourth-part {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: -2rem;
+        }
+
+        .farm-star img {
+            width: 40px;
+            margin: 0;
+            transform: translateX(31rem);
+            margin-top: 7rem;
+        }
+
+        .link {
+            z-index: -2;
+        }
+
+        .reg {
+            margin-top: 18rem;
+        }
+
+        .arrow-image img {
+            width: 59px;
+            transform: translateY(-4.5rem);
+            margin-left: 15rem;
+            z-index: 9999;
+            position: absolute;
+        }
+
+        .register h1 {
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+
+    }
+
+}
+
+@media (max-width:459px) {
+
+    .hero {
+        margin-left: -25px;
+    }
+
+    .hero .cat h1 {
+        width: 300px;
+        font-size: 36px;
+    }
+
+    .circle {
+        margin-left: -12rem;
+    }
+
+    .woman,
+    .man {
+        width: 339.18px;
+        margin-left: 25px;
+    }
+
+    .access {
+        margin-bottom: 4rem;
+        margin-left: -2px;
+    }
+
+    .access img {
+        width: 40px;
+    }
+
+    .access .farmer .two {
+        transform: translateX(1rem);
+        position: absolute;
+    }
+
+    .access .farmer .three {
+        transform: translateX(2.2rem);
+        position: absolute;
+    }
+
+    .millions {
+        margin-left: 40px;
+    }
+
+    .millions img {
+        width: 40px;
+        margin-right: 3px;
+    }
+
+    .millions p {
+        width: 269px;
+        font-size: 12px;
+        margin-top: 1rem;
+    }
+
+    .story {
+        margin-top: -80px;
+        margin-left: 25px;
+    }
+
+    .story p {
+        font-size: 16px;
+        width: 337px;
+        margin-top: 0.5rem;
+    }
+
+    .story a {
+        margin-top: -1rem;
+    }
+
+    .man {
+        margin-left: -15px;
+        margin-top: 1rem;
+    }
+
+    .farm {
+        margin-left: 3rem;
+        margin-top: -2rem;
+    }
+
+    .center-farm img {
+        width: 304.32px;
+    }
+
+    .register {
+        margin-left: 25px;
+    }
+
+    .register h1 {
+        width: 364px;
+        font-size: 32px;
+        margin-top: -2rem;
+    }
+
+    .link {
+        margin-bottom: 3rem;
+    }
+
+    .arrow-image img {
+        transform: translateY(-7.6rem);
+    }
+
+    .logo {
+        width: 209px;
+        height: 201px;
+    }
+}
