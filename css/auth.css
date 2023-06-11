@@ -9,6 +9,9 @@
 
 body {
     background-color: #E2FAE7BF;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sections {
